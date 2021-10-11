@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "+":
+                    return sum(arg1, arg2);
+                    break;
+                case "-":
+                    return subtract(arg1, arg2);
+                    break;
+                case "/":
+                    return divide(arg1, arg2);
+                    break;
+                case "*":
+                    return multiply(arg1, arg2);
+                    break;
+                default:
+                    alert('Была введена ерунда')
+            }
+
+
+        }
+
+        function sum(num1, num2) {
+            return num1 + num2;
+        }
+
+        function subtract(num1, num2) {
+            return num1 - num2;
+        }
+
+        function divide(num1, num2) {
+            return num1 / num2;
+        }
+
+        function multiply(num1, num2) {
+            return num1 * num2;
+        }
+
+
+        userSign = prompt('Введите знак оперции ("+" или "-" или "/" или "*")')
+        result = mathOperation(10, 15, userSign);
+        alert(`result = ${result}`)
+
+    </script>
+</body>
+
+</html>
